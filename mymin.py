@@ -2,7 +2,7 @@ def mymin(l):
     '''Custom min function. Python example/exercise.'''
     m = l[0]
     for i in l:
-        if i<m:
+        if i < m:
             m = i
     return m
     

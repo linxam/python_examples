@@ -2,7 +2,7 @@ def mymax(l):
     '''Custom max function. Python example/exercise.''' 
     m = l[0]
     for i in l:
-        if i>m:
+        if i > m:
             m = i
     return m
     

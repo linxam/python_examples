@@ -1,7 +1,11 @@
 def is_prime(num: int) -> bool:
     '''this function returns True if there is a prime number, else returns False'''
-    for i in range(2, round(num**0.5)+1):
-        if num%i==0:
+    if num == 2:
+        return True
+    if num % 2 == 0:
+        return False
+    for i in range(3, round(num**0.5)+1, 2):
+        if num % i == 0:
             return False
     return True
 
